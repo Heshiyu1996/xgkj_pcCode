@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,相册代码,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为Google Grid瀑布流相册效果，属于站长常用代码，更多相册代码代码请访问懒人图库JS代码频道。" />
+<title>Google Grid瀑布流相册效果_懒人图库</title>
+<link rel="stylesheet" type="text/css" href="css/patent_infoForPicDemo.css" />
+<link rel="stylesheet" type="text/css" href="css/patent_infoForPicComponent.css" />
+<script src="js/patent_pic/modernizr.custom.js"></script>
+</head>
+<body>
+<!-- 代码 开始 -->
+		<div class="container">
+
+
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid">
+						<li class="grid-sizer"></li><!-- for Masonry column width -->
+						<li>
+							<figure>
+								<img src="images/thumb/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/thumb/2.png" alt="img02"/>
+							 </figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/thumb/3.png" alt="img03"/>
+							 	</figure>
+						</li>
+
+					</ul>
+				</section><!-- // grid-wrap -->
+
+
+				<section class="slideshow">
+					<ul>
+						<li>
+							<figure>
+								<img src="images/large/1.png" alt="img01"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/large/2.png" alt="img02"/>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="images/large/3.png" alt="img03"/>
+							</figure>
+						</li>
+
+
+					</ul>
+					<nav>
+						<span class="icon nav-prev"></span>
+						<span class="icon nav-next"></span>
+						<span class="icon nav-close"></span>
+					</nav>
+					<div class="info-keys icon">使用键盘←→</div>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+		<script src="js/patent_pic/imagesloaded.pkgd.min.js"></script>
+		<script src="js/patent_pic/masonry.pkgd.min.js"></script>
+		<script src="js/patent_pic/classie.js"></script>
+		<script src="js/patent_pic/cbpgridgallery.js"></script>
+
+<!-- 代码 结束 -->
+<script>
+	new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+</script>
+</body>
+</html>

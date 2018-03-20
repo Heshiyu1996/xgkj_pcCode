@@ -1,0 +1,20 @@
+
+    var pageWidth=document.body.scrollWidth || document.documentElement.scrollWidth;//页宽
+    var pageHeight=document.body.scrollHeight || document.documentElement.scrollHeight;//页高
+
+    var myMask=document.createElement("div");//创建遮罩层
+    myMask.id="mask";
+    myMask.style.height=pageHeight+"px";
+    myMask.style.width=pageWidth+"px";
+    document.body.appendChild(myMask);
+
+    var loginBox=document.createElement("div");//创建登录框
+    loginBox.id="login";
+    loginBox.innerHTML="<div class='loginContent'><div id='btn_Close'>点击可进行关</div>对话框标题</div>";
+    document.body.appendChild(loginBox);
+
+    var loginBoxheight=loginBox.offsetHeight;//获取登陆框的宽和高
+    var loginBoxWidth=loginBox.offsetWidth;
+
+    //获取关闭按钮
+    var oClose=document.getElementById("btn_Close");

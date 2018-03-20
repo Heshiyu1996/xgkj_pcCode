@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>专利详情</title>
+	<link rel="stylesheet" href="plugins/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="plugins/font-awesome-4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/patent_info.css">
+
+	<script type="text/javascript" src="plugins/jquery-3.3.1/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<!-- <script type="text/javascript" src="./js/rule.js"></script>   -->
+
+
+</head>
+<body>
+
+<div id="header-2016">
+	<div style=" width:1140px; margin:0 auto;">
+        <div class="header-lf">
+            <a href="##"><img src="img/logo.png"></a>
+            <a href="index.html"><h2>小功科技创新交易平台</h2></a>
+        </div>
+        <div class="header-md">
+            <ul>
+                <li>
+                    <a href="##"> 专利分类</a>
+                </li>
+                <li>
+                    <a href="##"> 便利资讯</a>
+                </li>
+                <li>
+                    <a href="##"> 虚拟专利创新平台</a>
+                </li>
+                <li>
+                    <a href="##"> 专利竞拍</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-rt" style="display: none;">
+            <a href="login.html" class="login">登陆</a>
+            <a href="register.html" class="register">注册</a>
+        </div>
+        <div id="psInfo2016" style="display: none;">
+            <a class="ps-Info" href="all.html">
+                <span class="fa fa-user-circle-o"></span>
+            </a>
+            <a class="ps-name">
+                <span></span>
+            </a>
+            <a class="log-out"><span class="fa fa-sign-out"></span></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+	<!-- <div style="width:1320px;height:80px;margin:0 auto;"></div> -->
+
+
+
+		<div class="clear"></div>
+
+
+<div class="panel panel-info bigFrame" style="width: 1140px">
+
+	<div class="panel-body">
+
+		<table  class="biankuang buttons" >
+			<tr>
+				<td  colspan="2"  >
+					<div style="margin-right: -20px" id="idForItem">商品编号：
+					<span id="patentID"></span>
+					</div>
+				</td>
+			</tr>
+
+			<tr style="border-bottom: 1px dashed darkgray; ">
+				<td  height="55px"   width=1290px  colspan="2">
+					<div class="patentName patentNameShowFrame omit nameInGuide" style=" width: 600px;margin: 0 auto;text-align:center;">
+
+					</div>
+				</td>
+			</tr>
+
+			<tr  ><!--原width=75%-->
+				<td  id="picForItem" height="380px" rowspan="7" style="padding-left: 150px" >
+					<div id="frameForPic"><!--放图片那里的padding-->
+
+						<table class="smallPhotos"   >
+
+							<tr >
+								<td  role="presentation" style="padding-bottom: 5px">
+									<a href="#pho1" role="tab" data-toggle="tab" style="padding-bottom: 5px">
+										<img src="img/light1.jpg" class="trans">
+									</a>
+								</td>
+
+								<td rowspan="4" style="padding-left: 5px; position: absolute">
+									<div class="phos" style="position: absolute">
+										<div class="tab-pane fade in active" id="pho1"><img src="img/light1.jpg"></div>
+										<div class="tab-pane fade" id="pho2"><img src="img/light2.jpg" style=" z-index:70;"></div>
+										<div class="tab-pane fade" id="pho3"><img src="img/light3.jpg" style="z-index:20;"></div>
+										<div class="tab-pane fade" id="pho4"><img src="img/light4.jpg" style="z-index:10;"></div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td  role="presentation" style="padding-bottom: 5px"  >
+									<a href="#pho2" role="tab" data-toggle="tab" style="padding-bottom: 5px">
+										<img src="img/light2.jpg"  class="trans">
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td  role="presentation" style="padding-bottom: 5px">
+									<a href="#pho3" role="tab" data-toggle="tab" style="padding-bottom: 5px">
+										<img src="img/light3.jpg" class="trans">
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td role="presentation">
+									<a href="#pho4" role="tab" data-toggle="tab" style="padding-bottom: 5px">
+										<img src="img/light4.jpg"   class="trans">
+									</a>
+								</td>
+							</tr>
+							<script>
+								$(function () {
+									$('#myTab0 a:last').tab('show')
+								})
+
+							</script>
+						</table>
+					</div>
+		</table>
+
+
+		<!--下半部分①开始-->
+		<div style="margin-left: 14px;width: 1100px; margin-top: 10px ">
+			<!--②开始 -->
+			<div   style=" margin-top: -10px; float: left">
+				<!--height原100px 850-->
+				<div class="borderColor" style=" margin:0 auto; width: 800px ;margin-left: 137px; ">
+					<ul class="nav mouse" role="tablist" id="myTab" style="font-size: 18px;"  ><!--灰色导航宽在这里设置-->
+						<li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">专利详情</a></li>
+					</ul>
+					<div class="clear"></div>
+
+					<div class="tab-content">
+
+						<div role="tabpanel" class="active in tab-pane fade frameForButtom" id="home">
+							<div >
+
+								<!--商品描述文字框开始-->
+
+								<div style="float: left">
+									<div  class="backgroundColor" style="margin: 15px 0px 0px 15px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 130px;text-align: center">
+										<div style="color: white;text-align: center;font-size:18px;">商品描述</div>
+									</div>
+								</div>
+								<div style="float: left;   ">
+									<div class="commonColor" style=" margin: 15px 15px 0px 0px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 638px;">
+
+									</div>
+								</div>
+
+
+
+
+								<div style="float:left;width: 740px; border-bottom:0px solid #dedede;margin-left:20px;margin-right:20px; margin-bottom: 10px" >
+
+									<div style="width:760px;float:left;padding: 20px">
+										<span id="description">
+
+										</span>
+
+									</div>
+								</div>
+								<!--商品描述文字框结束-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="margin-left: 14px;width: 1100px; margin-top: 0px ">
+			<!--②开始 -->
+			<div   style=" margin-top: -10px; float: left">
+				<!--height原100px 850-->
+				<div class="borderColor" style=" margin:0 auto; width: 931px ;margin-left: 6px; ">
+					<ul class="nav mouse" role="tablist" id="myTab" style="font-size: 18px;margin-left: 131px"  ><!--灰色导航宽在这里设置-->
+						<li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">专利详情</a></li>
+					</ul>
+					<div class="clear"></div>
+
+					<div class="tab-content">
+
+						<div role="tabpanel" class="active in tab-pane fade frameForButtom" id="home"  style="margin-left: 131px">
+							<div>
+
+								<!--商品描述文字框开始-->
+
+								<div style="float: left">
+									<div  class="backgroundColor" style="margin: 15px 0px 0px 15px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 130px;text-align: center">
+										<div style="color: white;text-align: center;font-size:18px;">商品描述</div>
+									</div>
+								</div>
+								<div style="float: left;   ">
+									<div class="commonColor" style=" margin: 15px 15px 0px 0px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 238px;">
+
+									</div>
+								</div>
+
+
+
+
+								<div style="float:left;width: 740px; border-bottom:0px solid #dedede;margin-left:20px;margin-right:20px; margin-bottom: 10px" >
+
+									<div style="width:760px;float:left;padding: 20px">
+										<span id="description">
+
+										</span>
+
+									</div>
+								</div>
+								<!--商品描述文字框结束-->
+							</div>
+
+<!--商品描述图片开始-->
+
+							<div style="float: left">
+								<div  class="backgroundColor" style="margin: 15px 0px 0px 15px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 130px;text-align: center">
+									<div style="color: white;text-align: center;font-size:18px;">商品照片</div>
+								</div>
+							</div>
+							<div style="float: left;">
+								<div class="commonColor" style=" margin: 15px 15px 30px 0px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 238px;">
+
+								</div>
+							</div>
+										<div class="describeOfPic">
+
+										<a href="javascript:;"> <img data-toggle="modal" data-target=".bs-example-modal-3" src="img/mxd2.jpg" style="width: 470px;height: 250px"> </a>
+										<div  style="margin: 0 auto;" class="modal fade bs-example-modal-3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-0" style="margin:  150px 200px 200px 250px;">
+												<div class="modal-content"  >
+													<img data-toggle="modal" data-target=".bs-example-modal-3" src="img/mxd2.jpg" style="width: 150%;height: 150%;margin: 0 auto; "  >
+												</div>
+											</div>
+										</div>
+										</div>
+
+										<div class="describeOfPic">
+											<a href="javascript:;"> <img data-toggle="modal" data-target=".bs-example-modal-4" src="img/mxd2.png" style="width: 470px;height: 250px"> </a>
+
+										<div  style="margin: 0 auto;" class="modal fade bs-example-modal-4" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-0" style="margin:  150px 200px 200px 250px;">
+												<div class="modal-content"  >
+													<img data-toggle="modal" data-target=".bs-example-modal-4" src="img/mxd2.png" style="width:150%;height: 150%;margin: 0 auto; "  >
+												</div>
+											</div>
+										</div>
+										</div>
+						</div>
+						<!--商品描述图片结束-->
+						
+					</div>
+
+					<script>
+						$(function () {
+							$('#myTab a:last').tab('show')
+						})
+
+					</script>
+				</div>
+			</div>
+			<!--②结束 -->
+
+
+
+		</div>
+		<!--下半部分①结束-->
+
+
+	</div>
+
+</div>
+
+
+
+	<div>
+		<ol class="guide"  style="margin:0 auto;width:1140px;font-size:20px;color: rgb(137,137,137)" >
+		</ol>
+	</div>
+	<div>
+		<ol class="guide"  style="margin:0 auto;width:1140px;font-size:12px;text-align:center;color: rgb(137,137,137)" >
+			<li><a href="#">友情链接1</a> </li>
+			<li><a href="#">友情链接2</a> </li>
+			<li><a href="#">友情链接3</a> </li>
+			<li><a href="#">友情链接4</a> </li>
+			<li><a href="#">友情链接5</a> </li>
+		</ol>
+	</div>
+
+
+	<div class="clear"></div>
+	<div id="footer-2016">
+		<div class="footer-box">
+			<h5>地址：广东省广州市天河区华南农业大学软件学院24楼</h5>
+			<h6>小功科技 版权所有<span style="font-family:Arial;">© 2016 xiaogong.com, All Rights Reserved</span> 粤
+				<span style="font-family:Arial;">ICP</span>备
+				<span style="font-family:Arial;">0000000</span>号
+				<span style="font-family:Arial;">-0</span>
+			</h6>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+
+<script type="text/javascript" src="plugins/jquery-3.3.1/jquery-3.1.1.min.js"></script>
+
+
+	<script type="text/javascript" language="javascript" src="js/common/publicDom.js"></script>
+	<script type="text/javascript" language="javascript" src="js/patentInfo.js"></script>
+
+</body>
+</html>

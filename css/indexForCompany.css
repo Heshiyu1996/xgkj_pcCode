@@ -1,0 +1,304 @@
+
+#header-2016{
+	position: fixed;
+	top:0;
+	z-index: 999;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.header-lf{
+	float: left;
+	padding-top: 7px;
+}
+
+.header-lf a{
+	float: left;
+}
+
+.header-lf a h2{
+	margin-left:10px;
+	margin-top: 5px;
+	color: #fff;
+}
+
+.header-lf img{
+	width: 40px;
+	margin-left: 40px;
+}
+
+.header-md{
+	float: left;
+	margin-left: 300px;
+}
+
+.header-md ul li{
+	float: left;
+	margin-left: 15px;
+	padding: 5px 5px;
+	margin-top: 15px;
+}
+
+.header-md ul li a{
+	font-size: 17px;
+	margin-left: 32px;
+	color: #fff;
+	display: inline-block;
+
+}
+
+.header-md ul li a:hover{
+	color: #2EB3BA !important;
+}
+
+.header-rt{
+	float: right;
+}
+
+.header-rt a{
+	font-size: 17px;
+	// color: #fff;
+	margin-top: 21px;
+	display: inline-block;
+	padding: 6px 18px;
+	margin-left: 8px;
+	// border: 1px solid rgb(223, 225, 226);
+	border-radius: 4px;
+	// background: #fff;
+}
+
+.header-rt .login{
+	background: #fff;
+	border: none;
+	color: #2EB3BA;
+}
+
+.header-rt .register{
+	background: #2EB3BA;
+	border: none;
+	color: #fff;
+
+	transition: background .2s, color .2s, border .2s;
+	-moz-transition: background .2s, color .2s, border .2s; /* Firefox 4 */
+	-webkit-transition: background .2s, color .2s, border .2s; /* Safari 和 Chrome */
+	-o-transition: background .2s, color .2s, border .2s; /* Opera */
+}
+
+.innerBox{
+	width: 1180px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1180px) {
+	.innerBox{
+		width: 1180px;
+	}
+}
+
+#section0{
+	/*background-image: url(../img/mac-bg1.jpg);*/
+	background-image: url(../img/white.png);
+	background-size: cover;
+}
+
+#section1{
+	background-image: url(../img/white.png);
+	background-size: cover;
+}
+
+#section2{
+	background-image: url(../img/white.png);
+	background-size: cover;
+}
+
+#section3{
+	background-image: url(../img/white.png);
+	background-size: cover;
+}
+
+
+
+.search_top {
+	width: 480px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top:5px;
+}
+
+
+.search_top input{
+	width: 370px;/*输入框大小*/
+	height: 30px;
+	float: left;
+	border: none;
+	font-size: 12px;
+	color:rgb(96, 107, 112);
+	padding:0 4px;
+	border: 1px solid #2e426c;
+	outline: 0;
+	border-right: none;
+	border-radius:  4px 0 0 4px ;
+}
+
+.search_top a{
+	float: left;
+	width: 50px;
+	height: 30px;/*背景大小*/
+	line-height: 30px;/*文字位置*/
+	font-size: 12px;
+	color: #fff;
+	background: #2e426c;
+	border: 1px solid #2e426c;
+	border-radius: 0 4px 4px 0;
+
+	transition: background .4s, color .4s, border .4s;
+	-moz-transition: background .4s, color .4s, border .4s; /* Firefox 4 */
+	-webkit-transition: background .4s, color .4s, border .4s; /* Safari 和 Chrome */
+	-o-transition: background .4s, color .4s, border .4s; /* Opera */
+}
+
+.search_top a:hover{
+	background: #fff;
+	border: 1px solid #2e426c;
+	color: #377ab7;
+}
+
+
+
+
+#allNews{
+	float: left;
+	width: 50px;
+	height: 30px;/*背景大小*/
+	line-height: 30px;/*文字位置*/
+	font-size: 12px;
+	color: #fff;
+	background: #2e426c;
+	border: 1px solid #2e426c;
+	border-radius: 4px;
+}
+
+#allNews:hover{
+	background: #fff;
+	border: 1px solid #2e426c;
+	color: #377ab7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@charset "utf-8";
+
+
+/* 首页 */
+
+
+.btn_01,.btn_02,.btn_03,.btn_04,.btn_05 {
+	position: relative;
+	display: block;
+}
+
+.btn_01{
+	background: url(../img/trade.png) no-repeat;
+	width: 233px;
+	height: 174px;
+	top: 7px;
+	left: 6px;
+}
+.btn_01:hover{
+	background: url(../img/trade2.png) no-repeat;
+	top: 8px;
+	left: 7px;}
+
+
+.btn_02{
+	background: url(../img/serve.png) no-repeat;
+	width: 233px;
+	height: 174px;
+	top: 7px;
+	left: 6px;
+}
+.btn_02:hover{
+	background: url(../img/serve2.png) no-repeat;
+	top: 8px;
+	left: 7px;}
+
+
+/**秋季计划**/
+
+/*内容*/
+
+.sec{ width:100%; position:relative;}
+.sec1{ height:314px; background:url(http://static.sdg-china.com/mxd/pic/mxd_act/v137_2/sec1.jpg) no-repeat;}
+.sec2_01{ height:389px; background:url(../img/serve.png) no-repeat;}
+.sec2_02{ height:389px; background:url(http://static.sdg-china.com/mxd/pic/mxd_act/v137_2/sec2_02.jpg) no-repeat;}
+
+
+/**导航条**/
+.sider { width:20px; position:fixed; left:50%; margin-left:600px; bottom:200px; _position:absolute; z-index:100;}
+.sider ul li{ position:relative; width:20px; height:20px; margin-bottom:10px; background:url(http://static.sdg-china.com/mxd/pic/mxd_act/v137_2/ico_dot.png) no-repeat; cursor:pointer; }
+.sider ul li span{ position:absolute; left:-100px; top:0; font-family:"微软雅黑"; width:100px; text-align:center; display:none; font-size:14px; color:#c8c211; }
+.sider ul li:hover span{ display:block;}
+.sider ul li.hover span{ display:block;}
+
+
+.big-md{
+	width: 1300px;
+	height: 750px;
+	background: #fff;
+// padding:6px 8px;
+// padding-top: 2px;
+	box-shadow: 0 2px 10px 0 rgba(255, 255, 255, 0.15);
+	overflow: hidden;
+	background: #eee;
+// outline: 2px solid #fff;
+}
+
+.big-md-focus ol{
+	bottom: 40px;
+}
+
+.big-md-focus ol li{
+// background: rgb(200, 200, 200);
+	background: #fff;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 0 3px;
+}
+
+.big-md-focus ol .active{
+	background: #2EB3BA;
+	border: #2EB3BA;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin:0 3px;
+}
+
+.big-md-focus .item{
+	float: left;
+}
+
+.big-md-focus .item >div{
+	width: 400px;
+ //height: 280px;
+	float: left;
+// margin:0 1px;
+	overflow: hidden;
+// border: 1px solid #000;
+// border-right: 1px solid rgb(239, 239, 239);
+}
+
+.big-md-focus img{
+	width: 400px;
+	border-radius: 4px;
+
+}

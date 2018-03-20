@@ -1,0 +1,163 @@
+
+
+
+
+/*中间横幅*/
+
+#big-2016{
+	width: 100%;
+	background: #377ab7;
+	padding: 60px 0;
+
+}
+
+@media screen and (max-width: 1260px) {
+	#big-2016{
+		width: 1260px;
+	}
+}
+
+.big-box{
+	width: 1140px;
+	height: 540px;
+	margin: 0 auto;
+	border-radius: 6px;
+	background: #377ab7;
+}
+
+.big-ad{
+	width: 600px;
+	float: left;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.big-ad .item{
+	width: 600px;
+	float: left;
+}
+
+.big-ad img{
+	border-radius: 4px;
+}
+
+.big-register{
+	width: 480px;
+	height: 568px;
+	float: right;
+	padding:30px 40px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+.big-register>div{
+	margin: 10px 0;
+	width: 400px;
+	float: left;
+
+}
+
+.big-register h4{
+	font-weight: bold;
+	color: #555;
+}
+
+.big-register label{
+	width: 70px;
+	color: #555;
+	float: left;
+	margin-top: 8px;
+	font-weight: normal;
+}
+
+.big-register input[type="text"],
+.big-register input[type="password"]{
+	width: 320px;
+	height: 40px;
+	outline: none;
+	float: left;
+	border-radius: 4px;
+	padding: 3px 20px;
+	// color:#606B70;
+	color: #555;
+}
+
+.big-register input[type="checkbox"]{
+	width: 16px;
+	height: 16px;
+	float: left;
+	border: 1px solid #000;
+	margin-top: 10px;
+}
+
+.big-register>div>button{
+	width: 318px;
+	height: 46px;
+	border: 1px solid #377ab7;
+	outline: none;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #fff;
+	background: #377ab7;
+	padding: 3px 10px;
+
+}
+
+.big-register>div>button:hover{
+	background:#377AB7;
+	border: 1px solid #377AB7;
+}
+
+.big-register .input-group{
+	width: 320px;
+}
+
+.big-register .input-group .input-group-btn button{
+	height: 40px;
+}
+
+.big-register .input-group input[type="text"]{
+	width: 223px;
+}
+
+.form-control:focus{
+	border-color: #20A0FF;
+	outline: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+
+/*底部版权*/
+#footer-2016{
+	width: 100%;
+	background: #fff;
+	margin-top: 0px;
+}
+
+@media screen and (max-width: 1260px) {
+	#footer-2016{
+		width: 1260px;
+	}
+}
+
+.footer-box{
+	width: 1140px;
+	height: 60px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 14px;
+}
+
+.footer-box h5,
+.footer-box h6{
+	color: #606B70;
+	font-size: 14px;
+	font-weight: normal;
+}
+.footer-box h6{
+	margin-top: 8px;
+}

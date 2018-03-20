@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>专利详情</title>
+
+
+
+	<link rel="stylesheet" href="plugins/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="plugins/font-awesome-4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/patent_info.css">
+
+	<script type="text/javascript" src="plugins/jquery-3.3.1/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<!-- <script type="text/javascript" src="./js/rule.js"></script>   -->
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/lrtk.css" rel="stylesheet" type="text/css" />
+	<script src="js/modernizr.custom.97074.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<script type="text/javascript" src="plugins/jquery-3.3.1/jquery-3.1.1.min.js"></script>
+
+
+<body>
+
+	<!-- <div style="width:1320px;height:80px;margin:0 auto;"></div> -->
+
+
+
+		<div class="clear"></div>
+
+
+
+
+
+<div class="panel panel-info bigFrame">
+
+	<div class="panel-body">
+
+
+		<table  class="biankuang buttons"  >
+
+
+
+			<tr>
+				<td  height="55px"   width=1290px  colspan="2">
+					<div class="patentName patentNameShowFrame omit nameInGuide" style=" width: 600px">
+
+					</div>
+				</td>
+			</tr>
+			<tr style="border-bottom: 1px dashed darkgray; ">
+				<td style="text-align: left">
+					<div class="omit " title="s" style="padding-left:40px;width:800px" alt="" id="purpose"></div>
+				</td>
+			</tr>
+			<tr  ><!--原width=75%-->
+				<td  id="picForItem" rowspan="7" >
+
+
+						<div id="frameForPic" style=" padding-left: 0px;padding-top:0px">
+							<div id="grid-gallery" class="grid-gallery" style="margin-left: -5px">
+								<section class="grid-wrap">
+									<ul id="da-thumbs" class="da-thumbs grid" style="width: 900px;padding-top: 15px">
+										<li style="margin-top: -9999px" class="grid-sizer"></li><!-- for Masonry column width -->
+										<li>
+											<a >
+												<img src="images/1.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+
+										</li>
+										<li>
+											<a >
+												<img src="images/2.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a >
+												<img src="images/3.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a>
+												<img src="images/6.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a >
+												<img src="images/7.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a >
+												<img src="images/8.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+
+									</ul>
+								</section><!-- // grid-wrap -->
+								<section class="slideshow">
+									<ul>
+										<li>
+											<figure>
+												<img src="images/1.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/2.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/3.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/6.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/7.jpg"/>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/8.jpg" />
+											</figure>
+										</li>
+
+									</ul>
+									<nav>
+										<span class="icon nav-prev"></span>
+										<span class="icon nav-next"></span>
+										<span class="icon nav-close"></span>
+									</nav>
+									<div class="info-keys icon">键盘←→可移动</div>
+								</section>
+							</div>
+						</div>
+					<script src="js/imagesloaded.pkgd.min.js"></script>
+					<script src="js/masonry.pkgd.min.js"></script>
+					<script src="js/classie.js"></script>
+					<script src="js/cbpgridgallery.js"></script>
+
+					<!-- 代码 结束 -->
+					<script>
+						new CBPGridGallery(document.getElementById('grid-gallery'));
+					</script>
+
+				</td><!--图片呈现的右边margin-->
+
+			</tr>
+
+
+
+
+
+
+		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" language="javascript" src="js/common/publicDom.js"></script>
+	<script type="text/javascript" language="javascript" src="js/patentInfo.js"></script>
+
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script type="text/javascript">
+	$(function() {
+
+		$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+	});
+</script>
+
+
+
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpgridgallery.js"></script>
+
+<!-- 代码 结束 -->
+<script>
+	new CBPGridGallery(document.getElementById('grid-gallery'));
+</script>
+
+
+
+</body>
+</html>

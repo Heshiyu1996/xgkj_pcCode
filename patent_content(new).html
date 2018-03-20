@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>专利详情</title>
+
+
+
+	<link rel="stylesheet" href="plugins/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="plugins/font-awesome-4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/patent_info.css">
+
+	<script type="text/javascript" src="plugins/jquery-3.3.1/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<!-- <script type="text/javascript" src="./js/rule.js"></script>   -->
+
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/lrtk.css" rel="stylesheet" type="text/css" />
+	<script src="js/modernizr.custom.97074.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<script type="text/javascript" src="plugins/jquery-3.3.1/jquery-3.1.1.min.js"></script>
+
+
+<body>
+
+<div id="header-2016">
+	<div style=" width:1140px; margin:0 auto;">
+        <div class="header-lf">
+            <a href="index.html"><img src="img/logo.png"></a>
+            <a href="index.html"><h2>小功科技创新交易平台</h2></a>
+        </div>
+        <div class="header-md">
+            <ul>
+				<li>
+					<a href="catalog.html"> 创新分类</a>
+				</li>
+				<li>
+					<a href="##"> 便利资讯</a>
+				</li>
+				<li>
+					<a href="##"> 虚拟创新平台</a>
+				</li>
+				<li>
+					<a href="##"> 专利竞拍</a>
+				</li>
+            </ul>
+        </div>
+        <div class="header-rt" style="display: none;">
+            <a href="login.html" class="login">登陆</a>
+            <a href="register.html" class="register">注册</a>
+        </div>
+        <div id="psInfo2016" style="display: none;">
+            <a class="ps-Info" href="all.html">
+                <span class="fa fa-user-circle-o"></span>
+            </a>
+            <a class="ps-name">
+                <span></span>
+            </a>
+            <a class="log-out"><span class="fa fa-sign-out"></span></a>
+        </div>
+        <div class="clear"></div>
+
+		<div  style="margin-top: 15px;">
+			<div class="dirLink" style=" float: left;margin-left:-105px;">
+				<ol class="guide commonColor"   >
+					您的位置：
+					<li id="catalog1" style="display: none"></li>
+					<li id="catalog2" style="display: none"></li>
+					<li id="catalog3" style="display: none"></li>
+					<li id="catalog4"style="display: none"></li>
+					<li style="display: none" class="patentName active omit nameInGuide">
+						<!--此处记得文字垂直对齐问题vertical-aligh：top，现已加入css-->
+
+						<span style="width: 50px;clear: left;"> </span></li>
+				</ol>
+			</div>
+
+
+
+
+			<div class="goBack" style="float: right">
+				<a href="all.html" style="font-size:15px;" >&nbsp;返回用户中心</a>
+			</div>
+
+		</div>
+
+    </div>
+
+</div>
+	<!-- <div style="width:1320px;height:80px;margin:0 auto;"></div> -->
+
+
+
+		<div class="clear"></div>
+
+
+
+
+
+<div class="panel panel-info bigFrame">
+
+	<div class="panel-body">
+
+
+
+			<table  class="biankuang buttons"   >
+			<tr  >
+				<td  colspan="2">
+					<div style="margin-right: -20px" id="idForItem">商品编号：
+					<span id="patentID"></span>
+					</div>
+				</td>
+			</tr>
+				<div style="margin-right: -0px;float: right" >
+					&nbsp;&nbsp;&nbsp;专利状态：
+					<span id="statusForItem"></span>
+				</div>
+
+			<tr>
+				<td  height="15px"   width=1290px  colspan="2">
+					<div class="patentName patentNameShowFrame omit nameInGuide" style=" width: 600px">
+
+					</div>
+					<br>
+
+				</td>
+			</tr>
+			<tr style="border-bottom: 1px dashed darkgray;float: left;margin-left: 30px ">
+	<td id="purpose"></td>
+			</tr>
+			<tr  ><!--原width=75%-->
+				<td  id="picForItem">
+
+
+						<div id="frameForPic" style="margin-left: 120px; padding-left: 0px;padding-top:0px">
+							<div id="grid-gallery" class="grid-gallery" style="margin-left: -5px">
+								<section class="grid-wrap">
+									<ul id="da-thumbs" class="da-thumbs grid" style="width: 900px;padding-top: 15px">
+										<li style="margin-top: -9999px" class="grid-sizer"></li><!-- for Masonry column width -->
+										<li>
+											<a >
+												<img src="images/1.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+
+										</li>
+										<li>
+											<a >
+												<img src="images/2.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a >
+												<img src="images/3.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a>
+												<img src="images/6.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a >
+												<img src="images/7.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+										<li>
+											<a >
+												<img src="images/8.jpg" />
+												<div><span>点击放大</span></div>
+											</a>
+										</li>
+
+									</ul>
+								</section><!-- // grid-wrap -->
+								<section class="slideshow">
+									<ul>
+										<li>
+											<figure>
+												<img src="images/1.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/2.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/3.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/6.jpg" />
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/7.jpg"/>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="images/8.jpg" />
+											</figure>
+										</li>
+
+									</ul>
+									<nav>
+										<span class="icon nav-prev"></span>
+										<span class="icon nav-next"></span>
+										<span class="icon nav-close"></span>
+									</nav>
+									<div class="info-keys icon">键盘←→可移动</div>
+								</section>
+							</div>
+						</div>
+					<script src="js/imagesloaded.pkgd.min.js"></script>
+					<script src="js/masonry.pkgd.min.js"></script>
+					<script src="js/classie.js"></script>
+					<script src="js/cbpgridgallery.js"></script>
+
+					<!-- 代码 结束 -->
+					<script>
+						new CBPGridGallery(document.getElementById('grid-gallery'));
+					</script>
+
+				</td><!--图片呈现的右边margin-->
+				<td style="  "height="110px"  >
+
+
+				</td>
+			</tr>
+
+
+
+
+
+
+
+
+			<tr>
+				<td colspan="2"  style="  border-top:1px dashed gray;border-left: hidden;border-right: hidden;">
+					<div><!--原80%-->
+						<ol    style="margin:0 auto;width:830px;font-size:20px;color: rgb(137,137,137);padding-top: 20px;">
+						</ol>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+
+		<!--下半部分①开始-->
+		<div style="margin-left: 14px;width: 1100px; margin-top: 0px ">
+			<!--②开始 -->
+			<div   style=" margin-top: -10px; float: left">
+				<!--height原100px 850-->
+				<div class="borderColor" style=" margin:0 auto; width: 800px ;margin-left: 6px; ">
+					<ul class="nav " role="tablist" id="myTab" style="margin-left:120px;font-size: 18px;"  ><!--灰色导航宽在这里设置-->
+
+						<li class="active" style="width: 800px;float: left;" >
+
+							<div class="con"  >
+								<a class="pos" href="#patent_detail" data-toggle="tab" >
+							<div class="nav_u"  >
+									专利详情
+							</div></a>
+						</div>
+
+						</li>
+					</ul>
+
+
+
+
+
+
+
+
+
+					<div class="clear" style="margin-bottom: 5px"></div>
+
+
+
+
+
+					<div class="tab-content">
+
+
+						<div style="width: 800px; margin-left:120px;" role="tabpanel" class="active in tab-pane fade frameForButtom" id="patent_detail">
+							<div >
+								<!--商品描述文字框开始-->
+
+								<div style="float: left">
+									<div  class="backgroundColor" style="margin: 15px 0px 0px 15px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 130px;text-align: center">
+										<div style="color: white;text-align: center;font-size:18px;">商品描述</div>
+									</div>
+								</div>
+
+								<div style="float: left;   ">
+									<div class="commonColor" style=" margin: 15px 15px 0px 0px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 238px;">
+									</div>
+								</div>
+
+								<div style="float:left;width: 740px; border-bottom:0px solid #dedede;margin-left:20px;margin-right:20px; margin-bottom: 10px" >
+
+									<div style="width:760px;float:left;padding: 20px">
+										<span id="description">
+
+										</span>
+
+									</div>
+								</div>
+								<!--商品描述文字框结束-->
+
+
+
+<!--商品设计说明开始--->
+
+							<div style="float: left">
+								<div  class="backgroundColor" style="margin: 15px 0px 0px 15px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 130px;text-align: center">
+									<div style="color: white;text-align: center;font-size:18px;">设计说明</div>
+								</div>
+							</div>
+							<div style="float: left;  ">
+								<div class="commonColor" style=" margin: 15px 15px 00px 0px;height: 30px;border-bottom: 1px solid #bcbcbc;width: 238px;">
+
+								</div>
+							</div>
+							<div style="float:left;width: 740px; border-bottom:0px solid #dedede;margin-left:20px;margin-right:20px; margin-bottom: 10px" >
+
+									<div style="width:760px;float:left;padding: 20px">
+										<span id="design">
+
+										</span>
+
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+<!--商品设计说明结束-->
+
+
+
+
+						<!--竞买须知开始-->
+						<div role="tabpanel" class="tab-pane fade frameForButtom" id="patent_notice" >
+							<div style="padding: 25px;padding: 0px 20px 20px 20px;">
+								<h1 style="text-align: center">竞买须知</h1>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四川省成都市新都区人民法院定于2016年10月24日8时起至2016年10月24日20时止（延时的除外）在四川省成都市新都区人民法院淘宝网司法拍卖网络平台上【网址：https://sf.taobao.com/028/06?spm=a213w.3065169.courtList.1226.xcgQRA】进行公开拍卖活动，现就有关的网上拍卖事宜敬告各位竞买人：
+								<p><p>一、本《拍卖须知》根据《中华人民共和国民事诉讼法》等相关法律规定所制订，竞买人应认真仔细阅读，了解本须知的全部内容。
+								<p>二、本次拍卖活动遵循“公开、公平、公正、诚实守信”的原则，拍卖活动具备法律效力。参加本次拍卖活动的当事人和竞买人必须遵守本须知的各项条款，并对自己的行为承担法律责任。
+								<p>三、凡具备完全民事行为能力的公民、法人和其他组织均可参加竞买（竞买人在淘宝网上实名注册）。
+									如参与竞买人未开设淘宝账户，可委托代理人（具备完全民事行为能力的自然人）进行，但须在竞买开始前向委托法院办理委托手续；竞买成功后，竞买人（法定代表人、其他组织的负责人）须与委托代理人一同到委托法院办理交接手续。如委托手续不全，竞买活动认定为委托代理人的个人行为。
+									因不符合条件参加竞买的，由竞买人自行承担相应的法律责任。
+								<p>四、与本标的物有利害关系的当事人可参加竞拍，不参加竞拍的请关注本次拍卖活动的整个过程。
+								<p>五、本次拍卖活动设置延时出价功能，在拍卖活动结束前，每最后2分钟如果有竞买人出价，就自动延迟5分钟。
+								<p>六、竞拍前竞买人的支付宝账户中应有足够的余额支付拍卖保证金。竞买人在对拍卖标的物第一次确认出价竞拍前，按淘宝系统提示报名缴纳保证金3万元，系统会自动锁定该笔款项。拍卖成交的，本标的物竞得者（以下称买受人）锁定的保证金将自动转入法院指定账户，其他竞买人的保证金在拍卖后即时释放。拍卖未成交的（即流拍的），竞买人的保证金在拍卖活动结束后即时释放，保证金锁定期间不计利息。
+								<p>七、本次拍卖是经法定公告期和展示期后才举行的，已根据评估公司调查情况就拍卖标的物已知及可能存在的瑕疵作了客观、详尽的说明。拍卖人对拍卖标的物所作的说明和提供的图片等，仅供竞买人参考，不构成对标的物的任何担保。所以请竞买人在拍卖前必须仔细审查拍卖标的物，调查是否存在瑕疵，认真研究查看所竞买标的物的实际情况，并请亲临展示现场，实地看样，未看样的竞买人视为对本标的实物现状的确认，慎重决定竞买行为，竞买人一旦作出竞买决定，即表明已完全了解，并接受标的物的现状和一切已知及未知的瑕疵。
+								<p>八、拍卖成交后，买受人应于2016年11月4日16时前将拍卖成交价余款（扣除保证金后的余款）缴入法院指定账户（账户名：成都市新都区人民法院，开户行：中国工商银行成都城东支行；账号：4402 94000902 4950 463），并交清余款的次日（节假日除外）16时前（凭法院财务室收据、付款凭证及相关身份材料、委托手续等原件）到四川省成都市新都区人民法院（地址：四川省成都市新都区香城北路289号）签署《拍卖成交确认书》，于签署确认书后10个工作日内领取民事裁定书及办理拍卖标的物交付手续，买受人自行提取拍卖标的物。
+								<p>九、买受人逾期未支付拍卖款，法院可以裁定重新拍卖。重新拍卖时，原买受人不得参加竞买。重新拍卖的价款低于原拍卖价款造成的差价、费用损失，由原买受人承担。法院可以直接从其预交的保证金中扣除。扣除后保证金剩余的，应当退还原买受人；保证金数额不足的，可以责令原买受人补交，拒不补交的，法院强制执行。
+								<p>十、买受人付款后应及时提取标的物，逾期不办理的，买受人应支付由此产生的费用，并承担本标的物可能发生的损毁、灭失等后果。
+								<p>十一、本次拍卖活动计价货币为人民币，拍卖时的起拍价、成交价均不含买受人在拍卖标的物交割、过户时所发生的全部费用和税费。
+								<p>十二、参加竞买的人应当遵守拍卖须知的规定，不得阻挠其他竞买人竞拍，不得操纵、垄断竞拍价格，严禁竞买人恶意串标，上述行为一经发现，将取消其竞买资格，并追究相关的法律责任。
+								<p>十三、拍卖人根据法律规定有权在拍卖开始前中止拍卖或撤回拍卖。如低于两名竞买人交纳保证金，人民法院将取消本次
+								<p>十四、为便于买受人及时收到人民法院拍卖相关的文书，竞买人在拍卖竞价前如实向淘宝网司法拍卖网络平台提供确切的送达地址，上述地址确认为邮寄地址，如需更改，买受人应在拍卖活动结束时与法院联系确认更改。如果提供的送达地址不确切，或不及时告知变更后的地址，使法院的有关法律文书无法送达或未能及时送达，竞买人自行承担由此可能产生的法律后果。
+								<p>十五、凡发现拍卖中有违规行为，可如实举报。
+									法院监督电话： 028-68903078
+									本规则其他未尽事宜，请向拍卖人咨询。
+									标的物详情咨询电话：028-68903093刘法官
+									司法技术咨询电话：028-68903026
+
+								<p style="text-align: right">成都市新都区人民法院
+								<p style="text-align: right">2016年10月14日
+							</div>
+						</div>
+						<!--竞买须知结束-->
+					</div>
+
+					<!--<script>-->
+						<!--$(function () {-->
+							<!--$('#myTab a:last').tab('show')-->
+						<!--})-->
+
+					<!--</script>-->
+				</div>
+			</div>
+			<!--②结束 -->
+
+			<!--③div开始-->
+			<div style="margin-left: 40px;float: left;width: 240px;">
+
+				<!--④div开始-->
+
+				<!--④div结束-->
+
+				<!--⑤div开始-->
+
+				<!--⑤div结束-->
+
+			</div>
+			<!--③div结束-->
+
+		</div>
+		<!--下半部分①结束-->
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="clear"></div>
+	<div id="footer-2016">
+		<div class="footer-box">
+			<h5>地址：广东省广州市天河区华南农业大学软件学院24楼</h5>
+			<h6>小功科技 版权所有<span style="font-family:Arial;">© 2016 xiaogong.com, All Rights Reserved</span> 粤
+				<span style="font-family:Arial;">ICP</span>备
+				<span style="font-family:Arial;">0000000</span>号
+				<span style="font-family:Arial;">-0</span>
+			</h6>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+
+
+
+	<script type="text/javascript" language="javascript" src="js/common/publicDom.js"></script>
+	<script type="text/javascript" language="javascript" src="js/patentInfoContent.js"></script>
+
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script type="text/javascript">
+	$(function() {
+
+		$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+	});
+</script>
+
+
+
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpgridgallery.js"></script>
+
+<!-- 代码 结束 -->
+<script>
+	new CBPGridGallery(document.getElementById('grid-gallery'));
+</script>
+
+
+
+</body>
+</html>

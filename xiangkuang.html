@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,焦点图,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为图片高度不固定的焦点图代码，属于站长常用代码，更多焦点图代码请访问懒人图库JS代码频道。" />
+<title>图片高度不固定的焦点图代码_懒人图库</title>
+<!-- Required CSS -->
+<link href="css/movingboxes.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<link href="css/movingboxes-ie.css" rel="stylesheet" media="screen" />
+<![endif]-->
+<link href="css/lrtk.css" rel="stylesheet">
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/jquery.movingboxes.js"></script>
+<base target="_blank">
+</head>
+
+<body>
+<!-- 代码 开始 -->
+	<div id="wrapper">
+		<!-- MovingBoxes Slider -->
+		<ul id="slider">
+
+			<li>
+				<img src="images/1.jpg" alt="picture">
+				<h2>News Heading</h2>
+				<p>Add a short exerpt here... <a href="http://www.lanrentuku.com">more</a></p>
+			</li>
+
+			<li>
+				<img src="images/2.jpg" alt="picture">
+				<h2>News Heading</h2>
+				<p>Add a short exerpt here... <a href="http://www.lanrentuku.com">more</a> and a whole lot more text goes here, so we can see the height adjust.</p>
+			</li>
+
+			<li>
+				<img src="images/3.jpg" alt="picture">
+				<h2>News Heading</h2>
+				<p>Add a short exerpt here... <a href="http://www.lanrentuku.com">more</a></p>
+			</li>
+
+			<li>
+				<img src="images/4.jpg" alt="picture">
+				<h2>News Heading</h2>
+				<p>Add a short exerpt here... <a href="http://www.lanrentuku.com">more</a></p>
+			</li>
+
+			<li>
+				<img src="images/5.jpg" alt="picture">
+				<h2>News Heading</h2>
+				<p>Add a short exerpt here... <a href="http://www.lanrentuku.com">more</a></p>
+			</li>
+
+
+		</ul><!-- end Slider #1 -->
+
+	</div><!-- end wrapper -->
+
+	<script>
+	$(function(){
+
+		$('#slider').movingBoxes({
+			/* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+			width: 500,
+			panelWidth: 0.5,
+			*/
+			startPanel   : 1,      // start with this panel
+			wrap         : false,  // if true, the panel will infinitely loop
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+	</script>
+<!-- 代码 结束 -->
+</body>
+</div>
+</html>

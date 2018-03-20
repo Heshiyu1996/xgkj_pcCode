@@ -1,0 +1,169 @@
+.borderColor{
+	border-color: #2E426C;
+}
+.backgroundColor{
+	background-color: #2E426C;
+}
+.commonColor{
+	color:#2E426C;
+}
+.commonColor li a{
+	color:#2E426C;
+}.commonColor div a {
+	 color:#2E426C;
+ }
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none !important;
+	font-family: "Microsoft Yahei";
+}
+
+body{
+	width: 100%;
+}
+
+.ft-yahei{
+	font-family: "Microsoft Yahei";
+}
+
+.ft-arial{
+	font-family: 'Arial';
+}
+
+.text-orange{
+	color:rgb(254,132,49) !important;
+}
+
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+
+
+/*头部*/
+#header-2016{
+	width: 100%;
+	height: 80px;
+	// position:fixed;
+	background: #fff;
+	// border: 1px solid #000;
+}
+
+.header-lf{
+	float: left;
+	padding-top: 7px;
+}
+
+.header-lf a{
+	float: left;
+}
+
+.header-lf a h2{
+	margin-left: 14px;
+	margin-top: 15px;
+	color: #525252;
+}
+
+.header-lf img{
+	width: 60px;
+}
+
+.header-md{
+	float: left;
+	margin-left: 280px;
+}
+
+.header-md ul li{
+	float: left;
+	margin-left: 5px;
+	padding: 5px 10px;
+	margin-top: 23px;
+}
+
+.header-md ul li a{
+	font-size: 17px;
+	margin-left: 22px;
+	color: #606B70;
+	display: inline-block;
+
+}
+
+.header-md ul li a:hover{
+	color: #2EB3BA !important;
+}
+
+.header-rt{
+	float: right;
+}
+
+.header-rt a{
+	font-size: 17px;
+	// color: #606B70;
+	margin-top: 21px;
+	display: inline-block;
+	padding: 6px 18px;
+	margin-left: 8px;
+	// border: 1px solid rgb(223, 225, 226);
+	border-radius: 4px;
+	// background: #fff;
+}
+
+.header-rt .login{
+	background: #fff;
+	border: 1px solid #2EB3BA;
+	color: #2EB3BA;
+}
+
+.header-rt .register{
+	background: #2EB3BA;
+	border: 1px solid rgb(223, 225, 226);
+	color: #fff;
+
+	transition: background .2s, color .2s, border .2s;
+	-moz-transition: background .2s, color .2s, border .2s; /* Firefox 4 */
+	-webkit-transition: background .2s, color .2s, border .2s; /* Safari 和 Chrome */
+	-o-transition: background .2s, color .2s, border .2s; /* Opera */
+}
+
+// .header-rt .register:hover{
+// 	background: rgb(30,160,170);
+// }
+
+@media screen and (max-width: 1260px) {
+	#header-2016{
+		width: 1260px;
+	}
+}
+
+
+
+/*底部版权*/
+#footer-2016{
+	width: 100%;
+	background: #2EB3BA;
+	margin-top: 80px;
+}
+
+@media screen and (max-width: 1260px) {
+	#footer-2016{
+		width: 1260px;
+	}
+}
+
+.footer-box{
+	width: 1140px;
+	height: 130px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.footer-box h5,
+.footer-box h6{
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+.footer-box h6{
+	margin-top: 14px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>登陆 | 专利交易平台</title>
+	<link rel="stylesheet" href="plugins/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="plugins/font-awesome-4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	
+	<label class="file" style="">
+	    <form id="importForm" name="importForm">
+	        <input type="file" class="btn btn-default" id="file_import" >
+	        <input type="submit" value="提交"  id="importSubmit" />
+	    </form>
+	</label>    
+
+
+
+
+	<script src="plugins/jquery-3.3.1/jquery-3.1.1.min.js"></script>
+	<script src="plugins/jquery-3.3.1/jquery.cookie.js"></script>
+	<script src="plugins/jquery-3.3.1/jquery.base64.js"></script>
+	<!-- <script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.js"></script> -->
+	<script src="plugins/echart/echarts.min.js"></script>
+	<script src="js/common/publicDom.js"></script>
+	<script>
+		$(function(){
+			var URL = publicDom.config.url + '/image/uploadImage';
+			var _this;
+			$('#file_import').on('change',function() {
+			    // $('#importSubmit').trigger('click');
+			    		var file =this.files[0];
+
+			    	    var formData = new FormData($('#importForm')[0]);	
+			    	    var param = {
+			    	    	img : formData ,
+			    	    	type: 1	,
+			    	    	tokennum: localStorage.getItem(publicDom.config.storageName),
+			    	    }
+			    	    // formData.
+			    	    console.log(formData);
+			    	    console.log(formData);
+			    	    console.warn(param);
+
+			            // var newURL = M_table.url + 'toolAction=importExecl';
+			            $.ajax({  
+			                  url: URL,  
+			                  type: 'POST',  
+			                  data: param,
+			                  async: false,  
+			                  cache: false,  
+			                  contentType: 'application/x-www-form-urlencoded',  
+			                  enctype:'multipart/form-data',
+			                  processData: false,  
+			                  success: function (data) {  
+			                    if(data.status){
+			                        
+			                    }else{
+			                       
+			                    }
+			                  },  
+			                  error: function (data) { 
+			                          
+			                  }  
+			            }); 
+			  
+			});
+			$('#importSubmit').click(function(event) {
+				// alert(1);
+				// event.preventDefault();
+				
+			});
+		})
+	</script>
+</body>
+</html>
